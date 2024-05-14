@@ -119,6 +119,16 @@
         font-style: normal;
     }
 
+            .row {
+        opacity: 0; /* Initially hide all rows */
+        animation: slideUp 1s ease-in-out forwards; /* Animation definition */
+        transform: translateY(20px); /* Initial position off-screen (bottom) */
+    }
+
+    @keyframes slideUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
     </style>
 </head>
 <body className='snippet-body'>
@@ -228,17 +238,19 @@
 <script type='text/javascript' src='#'></script>
 <script type='text/javascript'>#</script>
 <script type='text/javascript'>
-    const productAction = document.querySelector('.product-action');
+    const productActions = document.querySelectorAll('.product-action');
 
-    // Check if the device is mobile using a media query
-    if (window.matchMedia('(max-width: 768px)').matches) {
-        // productAction.style.opacity = 0; // Initially hide on mobile
+    productActions.forEach(productAction => {
+        if (window.matchMedia('(max-width: 768px)').matches) {
+            // Initially hide on mobile (optional)
+            // productAction.style.opacity = 0;
 
-        setTimeout(() => {
-            productAction.style.opacity = 1; // Show after 2 seconds on mobile
-            productAction.style.bottom = "20px";
-        }, 1000);
-    }
+            setTimeout(() => {
+                productAction.style.opacity = 1;
+                productAction.style.bottom = "20px";
+            }, 1000);
+        }
+    });
 
     var myLink = document.querySelector('a[href="#"]');
 myLink.addEventListener('click', function (e) {
