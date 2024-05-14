@@ -137,7 +137,7 @@
 }">
     </div>
     <div class="row" style="justify-content: center; margin-bottom: 100px">
-        <div class="gochi-hand-regular">you can support me by buying these cool stuff. Thank you so much 💕💕</div>
+        <div class="gochi-hand-regular" style="text-align: center">you can support me by buying these cool stuff. Thank you so much 💕💕</div>
     </div>
     <div class="row">
 
@@ -227,7 +227,20 @@
 <script type='text/javascript' src='#'></script>
 <script type='text/javascript' src='#'></script>
 <script type='text/javascript'>#</script>
-<script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+<script type='text/javascript'>
+    const productAction = document.querySelector('.product-action');
+
+    // Check if the device is mobile using a media query
+    if (window.matchMedia('(max-width: 768px)').matches) {
+        // productAction.style.opacity = 0; // Initially hide on mobile
+
+        setTimeout(() => {
+            productAction.style.opacity = 1; // Show after 2 seconds on mobile
+            productAction.style.bottom = "20px";
+        }, 1000);
+    }
+
+    var myLink = document.querySelector('a[href="#"]');
 myLink.addEventListener('click', function (e) {
     e.preventDefault();
 });</script>
