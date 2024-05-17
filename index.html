@@ -37,7 +37,7 @@
         vertical-align: middle;
         display: flex;
         font-family: 'Calibri', sans-serif !important;
-        background-color:#869d3d
+        background-color: #869d3d
     }
 
     .mt-100 {
@@ -119,15 +119,21 @@
         font-style: normal;
     }
 
-            .row {
+    .row {
         opacity: 0; /* Initially hide all rows */
         animation: slideUp 1s ease-in-out forwards; /* Animation definition */
         transform: translateY(20px); /* Initial position off-screen (bottom) */
     }
 
     @keyframes slideUp {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
     </style>
 </head>
@@ -135,7 +141,8 @@
 <div class="container d-flex justify-content-center mt-100" style="flex-direction: column">
 
     <div class="row" style="justify-content: center">
-        <img src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/icon.jpg" alt="Image Before Text" style="    border-radius: 100%;width: 67px;height: 67px;">
+        <img src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/icon.jpg" alt="Image Before Text"
+             style="    border-radius: 100%;width: 67px;height: 67px;">
 
     </div>
     <div class="row" style="justify-content: center">
@@ -147,20 +154,23 @@
 }">
     </div>
     <div class="row" style="justify-content: center; margin-bottom: 100px">
-        <div class="gochi-hand-regular" style="text-align: center">you can support me by buying these cool stuff. Thank you so much 💕💕</div>
+        <div class="gochi-hand-regular" style="text-align: center">you can support me by buying these cool stuff. Thank
+            you so much 💕💕
+        </div>
     </div>
     <div class="row">
 
         <!--        product-->
         <div class="col-md-3">
             <div class="product-wrapper mb-45 text-center">
-                <div class="product-img"><a href="#" data-abc="true"> <img
+                <div class="product-img"><a href="https://s.click.aliexpress.com/e/_DEuPA8b" data-abc="true"> <img
                         src="https://raw.githubusercontent.com/ddaatts1/WybShort/main/images/Cat-Figure.jpg" alt=""
                         width="290px" height="362px">
                 </a> <span class="text-center"><i class="fa fa-rupee"></i> 43,000</span>
                     <div class="product-action">
-                        <div class="product-action-style"><a href="#"> <i class="fa fa-plus"></i> </a> <a href="#"> <i
-                                class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i> </a>
+                        <div class="product-action-style"><a href="https://s.click.aliexpress.com/e/_DEuPA8b"> <i
+                                class="fa fa-plus"></i> </a> <a href="https://s.click.aliexpress.com/e/_DEuPA8b"> <i
+                                class="fa fa-heart"></i> </a> <a href="https://s.click.aliexpress.com/e/_DEuPA8b"> <i class="fa fa-shopping-cart"></i> </a>
                         </div>
                     </div>
                 </div>
@@ -177,10 +187,10 @@
                 </a> <span><i class="fa fa-rupee"></i> 41,000</span>
                     <div class="product-action">
                         <div class="product-action-style"><a class="action-plus" title="Quick View" data-toggle="modal"
-                                                             data-target="#exampleModal" href="#" data-abc="true"> <i
-                                class="fa fa-plus"></i> </a> <a class="action-heart" title="Wishlist" href="#"
+                                                             data-target="#exampleModal" href="https://s.click.aliexpress.com/e/_DDqAyU3" data-abc="true"> <i
+                                class="fa fa-plus"></i> </a> <a class="action-heart" title="Wishlist" href="https://s.click.aliexpress.com/e/_DDqAyU3"
                                                                 data-abc="true"> <i class="fa fa-heart"></i> </a> <a
-                                class="action-cart" title="Add To Cart" href="#" data-abc="true"> <i
+                                class="action-cart" title="Add To Cart" href="https://s.click.aliexpress.com/e/_DDqAyU3" data-abc="true"> <i
                                 class="fa fa-shopping-cart"></i> </a></div>
                     </div>
                 </div>
@@ -236,7 +246,7 @@
 <script type='text/javascript' src='#'></script>
 <script type='text/javascript' src='#'></script>
 <script type='text/javascript' src='#'></script>
-<script type='text/javascript'>#</script>
+<script type='text/javascript'></script>
 <script type='text/javascript'>
     const productActions = document.querySelectorAll('.product-action');
 
@@ -253,9 +263,9 @@
     });
 
     var myLink = document.querySelector('a[href="#"]');
-myLink.addEventListener('click', function (e) {
-    e.preventDefault();
-});</script>
+    myLink.addEventListener('click', function (e) {
+        e.preventDefault();
+    });</script>
 
 </body>
 </html>
